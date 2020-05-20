@@ -1,4 +1,4 @@
-import getPokemonInfo from './Pockemon.js';
+import Pockemon from './Pockemon.js';
 import getAboutMe from './getAboutMe.js';
 const url = 'https://pokeapi.co/api/v2/pokemon/ditto/';
 function addPokemon() {
