@@ -1,12 +1,11 @@
-import Pockemon from './Pockemon.js';
-import getAboutMe from './getAboutMe.js';
+import addName from './AboutMe.js';
+import getPokemonInfo from './Pockemon.js';
 const url = 'https://pokeapi.co/api/v2/pokemon/ditto/';
 function addPokemon() {
     return getPokemonInfo(url);
 }
-
 onload = function loadPage() {
-    document.getElementById("AboutMeTab").onclick=addName;
-    document.getElementById("PokemonTab").onclick=addPokemon;
+    document.getElementById("homeTab").onclick=addName;
+    document.getElementById("pokemonTab").onclick=addPokemon;
     addName();
 }
