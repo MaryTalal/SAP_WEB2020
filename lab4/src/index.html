@@ -4,7 +4,14 @@
     <meta charset="UTF-8">
     <title>Lab4</title>
     <style type="text/css">
-        .divTab { width: 100%; padding: 0px; margin: 0 auto;  }
+        .divTab { 
+            display: inline-block;
+            width: 100%;
+            padding: 0px;
+            margin: auto;
+            text-align: center;
+            background-color: #0094cc;
+        }
         .tabs { width: 100%; padding: 0px; margin: 0 auto; }
         .tabs>div {
             display: none;
@@ -15,22 +22,24 @@
         .tabName {
             display: inline-block;
             padding: 7px;
-            margin: 0 -5px -1px 0;
+            margin: 0 -5px 30px 0;
             text-align: center;
-            color: #000000;
-            font-family:"Comic Sans MS", Georgia, serif;
-            border: 1px solid #FFFF00;
+            color: #4855ca;
+            font-family: Geneva, Arial, Helvetica, sans-serif;
+            border: 1px solid #C0C0C0;
             margin-top: 30px;
-            background: #FFFF00;
+            background: #82f7ff;
             cursor: pointer;
         }
         .active  {
             color: #000000;
-            font-family:"Arial", Georgia, Serif;
+            padding: 15px;
+            margin: 10px auto;
+            max-width: 70%;
+            font-family: Geneva, Arial, Helvetica, sans-serif;
             font-size: large;
             border: 1px solid #C0C0C0;
-            /*border-bottom: 1px solid #FFFFFF;*/
-            background: #FFFFFF;
+            background: #82f7ff;
             text-align: center;
         }
     </style>
@@ -39,8 +48,8 @@
 <body>
 <nav>
     <div id="mainTab" role="tablist" class="divTab">
-        <a id="homeTab" data-toggle="tab" href="#app" role="tab" class="tabName">About me</a>
-        <a id="pokemonTab" data-toggle="tab" href="#app" role="tab" class="tabName">Pokemon Info</a>
+        <a id="AboutMeTab" data-toggle="tab" href="#app" role="tab" class="tabName">About Me</a>
+        <a id="PokemonTab" data-toggle="tab" href="#app" role="tab" class="tabName">Pokemon Information</a>
     </div>
 </nav>
 
